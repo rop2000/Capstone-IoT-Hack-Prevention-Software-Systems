@@ -37,7 +37,7 @@ int noteDurations[] = {
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(GND, OUTPUT);
+  pinMode(ND, OUTPUT);
   pinMode(VCC, OUTPUT);
   pinMode(DATA, INPUT);
   pinMode(redled, OUTPUT);
@@ -80,9 +80,8 @@ void loop() {
       Serial.print("DATA,TIME,");
       Serial.print(digitalRead(DATA_R));
       Serial.println();
-      delay(100);
+      delay(200);
       digitalWrite(redled, HIGH);
-
     }
     else {
         digitalWrite(yellowled, LOW);
