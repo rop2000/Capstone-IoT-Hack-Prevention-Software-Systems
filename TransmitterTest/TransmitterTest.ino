@@ -32,7 +32,7 @@ int noteDurations[] = {
   32,32,32,32,32,32,32,32,32,32,32,32,
   32,32,32,32,32,32,32,32,32,32,32
 };
- int randomNote; 
+ int randomNote;
 
 void setup() {
   // put your setup code here, to run once:
@@ -77,20 +77,19 @@ void loop() {
       digitalWrite(redled, LOW);
       digitalWrite(DATA, recordedSignal[i]);
       delayMicroseconds(315);
-      Serial.print("DATA,TIME,");   
+      Serial.print("DATA,TIME,");
       Serial.print(digitalRead(DATA_R));
       Serial.println();
       delay(100);
       digitalWrite(redled, HIGH);
-  v
+  
     }
     else {
         digitalWrite(yellowled, LOW);
         digitalWrite(redled, LOW);
-        buttonState = 0; 
+        buttonState = 0;
     }
   }
- 
+
   delayMicroseconds(9000);
 }
-    
