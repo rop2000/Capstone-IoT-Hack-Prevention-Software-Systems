@@ -82,7 +82,6 @@ void loop() {
       Serial.println();
       delay(200);
       digitalWrite(redled, HIGH);
-  v
     }
     else {
         digitalWrite(yellowled, LOW);
